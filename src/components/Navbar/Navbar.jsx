@@ -33,7 +33,7 @@ export default function Navbar() {
                 {(toggleMenu || screenWidth > 775) && (
                     < >
                         <div className="navbarContainer">
-                            <h1 className="title">Yenvuè</h1>
+                            <a href=""><h1 className="title">Yenvuè</h1></a>
                             <ul className="list">
                                 <li className="items">Home</li>
                                 <li className="items">Sofas</li>
@@ -52,7 +52,7 @@ export default function Navbar() {
 
                 {(screenWidth < 775) && (!toggleMenu)
                     ? < >
-                        <h1 className="mobileTitle">Yenvuè</h1>
+                        <a href=""><h1 className="mobileTitle">Yenvuè</h1></a>
                         <div className="button">
                             <button onClick={toggleNav} className="btn"><RiMenu3Fill size="1.7rem" color="white" /></button>
                         </div>

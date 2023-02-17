@@ -12,7 +12,7 @@ function Slider() {
                 <div className="container">
                     <span className="sliderTest">NOW</span>
                     <span className="sliderTitle">Good design is for everyone</span>
-                    <span className="sliderDesc">Here are sofas that allows you to really relax and feel comfortable</span>
+                    <span className="sliderDesc">Sofas that allows you to really relax and feel comfortable</span>
                 </div>
             </div>
         </div>
