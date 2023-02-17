@@ -1,0 +1,148 @@
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #1a1919;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1024px;
+    margin: 1.2rem;
+}
+
+.navbarContainer {
+    display: flex;
+    gap: 2rem;
+}
+
+h1 {
+    font-family: 'Domine', serif;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    width: fit-content;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.items {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Domine', serif;
+    margin: 0 1.5rem;
+    color: #aeaeae;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: .3px;
+    line-height: 24px;
+}
+
+.inputNavbar {
+    display: flex;
+    align-items: center;
+}
+
+input.search {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: .3px;
+    line-height: 24px;
+    color: #393939;
+    background-color: transparent;
+    width: 105px;
+    padding: .6em 1em;
+    margin: 0 1rem;
+    border: .2em solid transparent;
+    border-left: .2em solid;
+}
+
+input.search:focus {
+    border: .2em solid #fff;
+    border-radius: 0.5rem;
+}
+
+.btn {
+    padding: 5px;
+    background-color: transparent;
+    border: 0;
+    font-size: 18px;
+}
+
+.icon path {
+    stroke: #fff;
+}
+
+
+@media screen and (max-width: 775px) {
+
+    .navbar {
+        display: grid;
+        grid-template-areas:
+            "a b"
+            "c c";
+        align-items: center;
+    }
+
+    .mobileTitle {
+        grid-area: a;
+        align-self: center;
+    }
+
+    .button {
+        grid-area: b;
+        align-self: start;
+        display: flex;
+        justify-content: end;
+    }
+
+    .navbarContainer {
+        flex-direction: column;
+        grid-area: c;
+        align-self: center;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .list {
+        flex-direction: column;
+        justify-content: space-around;
+        height: auto;
+        width: 100%;
+        padding: 0;
+        margin: 2rem 0;
+    }
+
+    .items {
+        display: inline-block;
+        width: 6rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.555);
+        text-align: center;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    .items:first-child {
+        border-top: 0;
+    }
+
+    .btn {
+        display: inline-flex;
+    }
+
+}
