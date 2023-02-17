@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "ESKILSTUNA",
+        "desc": "3-seat sofa, with chaise longue/Hillared anthracite",
+        "price": "899€",
+        "url": "https://www.ikea.com/es/en/images/products/eskilstuna-3-seat-sofa-with-chaise-longue-hillared-anthracite__0798260_pe767202_s5.jpg?f=xs"
+    },
+    {
+        "id": 2,
+        "name": "GLOSTAD",
+        "desc": "2-seat sofa, Knisa dark grey",
+        "price": "169€",
+        "url": "https://www.ikea.com/es/en/images/products/glostad-2-seat-sofa-knisa-dark-grey__0950897_pe800737_s5.jpg?f=xs"
+    },
+    {
+        "id": 3,
+        "name": "KIVIK",
+        "desc": "3-seat sofa, Tibbleby beige/grey",
+        "price": "599€",
+        "url": "https://www.ikea.com/es/en/images/products/kivik-3-seat-sofa-tibbleby-beige-grey__1056143_pe848278_s5.jpg?f=xs"
+    },
+    {
+        "id": 4,
+        "name": "ASKEBY",
+        "desc": "2-seat sofa-bed, Knisa dark grey",
+        "price": "279€",
+        "url": "https://www.ikea.com/es/en/images/products/askeby-2-seat-sofa-bed-knisa-dark-grey__1034853_pe837856_s5.jpg?f=xs"
+    },
+    {
+        "id": 5,
+        "name": "LINANÄS",
+        "desc": "3-seat sofa, with chaise longue/Vissle dark grey",
+        "price": "399€",
+        "url": "https://www.ikea.com/es/en/images/products/linanas-3-seat-sofa-with-chaise-longue-vissle-dark-grey__1013909_pe829463_s5.jpg?f=xs"
+    },
+    {
+        "id": 6,
+        "name": "ODENSLUNDA",
+        "desc": "4-seat sofa with chaise longue, Kelinge grey-turquoise",
+        "price": "1.049€",
+        "url": "https://www.ikea.com/es/en/images/products/kivik-4-seat-sofa-with-chaise-longue-kelinge-grey-turquoise__1055848_pe848128_s5.jpg?f=xs"
+    }
+]
