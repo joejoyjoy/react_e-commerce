@@ -10,7 +10,7 @@ function Slider() {
         }}>
             <div className="sliderWitdh">
                 <div className="container">
-                    <span className="sliderTest">NOW</span>
+                    <span className="sliderTest">OUR VISION:</span>
                     <span className="sliderTitle">Good design is for everyone</span>
                     <span className="sliderDesc">Sofas that allows you to really relax and feel comfortable</span>
                 </div>
