@@ -61,17 +61,20 @@ input.search {
     font-size: 14px;
     letter-spacing: .3px;
     line-height: 24px;
-    color: #393939;
+    color: #fff;
     background-color: transparent;
     width: 105px;
     padding: .6em 1em;
     margin: 0 1rem;
     border: .2em solid transparent;
-    border-left: .2em solid;
+    border-left: .2em solid #393939;
+}
+
+input.search::placeholder {
+    color: #aeaeae;
 }
 
 input.search:focus {
-    border: .2em solid #fff;
     border-radius: 0.5rem;
 }
 
