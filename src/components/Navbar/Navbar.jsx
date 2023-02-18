@@ -33,7 +33,7 @@ export default function Navbar() {
                 {(toggleMenu || screenWidth > 775) && (
                     < >
                         <div className="navbarContainer">
-                            <a href=""><h1 className="title">Yenvuè</h1></a>
+                            <a href="" ><h1 className="title">Yenvuè</h1></a>
                             <ul className="list">
                                 <li className="items">Home</li>
                                 <li className="items">Sofas</li>

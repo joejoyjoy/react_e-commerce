@@ -28,9 +28,9 @@ section {
 }
 
 .sidebar-title {
-    font-family: 'Domine', serif;
+    font-family: 'Bellefair', serif;
     font-weight: 400;
-    font-size: 1.7rem;
+    font-size: 2rem;
     margin-bottom: 0.7rem;
 }
 
@@ -80,9 +80,9 @@ section {
 }
 
 .sidebar-product-title {
-    font-family: 'Domine', serif;
+    font-family: 'Bellefair', serif;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     margin: 0;
 }
 
@@ -95,7 +95,6 @@ section {
 .sidebar-subtotal {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid #d8d8d8;
     border-bottom: 1px solid #d8d8d8;
     padding: 12px 0;
 }

@@ -21,10 +21,14 @@ nav {
 }
 
 h1 {
-    font-family: 'Domine', serif;
+    font-family: 'Bellefair', serif;
     color: #fff;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.navbarContainer>a:link {
+    text-decoration: none;
 }
 
 .list {
@@ -41,11 +45,11 @@ h1 {
 .items {
     display: inline-flex;
     align-items: center;
-    font-family: 'Domine', serif;
+    font-family: 'Bellefair', serif;
     margin: 0 1.5rem;
     color: #aeaeae;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 17px;
     letter-spacing: .3px;
     line-height: 24px;
 }

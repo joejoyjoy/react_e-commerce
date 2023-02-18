@@ -18,7 +18,7 @@
 }
 
 span.sliderTest {
-    font-family: 'Domine', serif;
+    font-family: 'Bellefair', serif;
     text-transform: uppercase;
     font-size: 1.2rem;
     color: #fff;
@@ -26,7 +26,7 @@ span.sliderTest {
 }
 
 span.sliderTitle {
-    font-family: 'Domine', serif;
+    font-family: 'Bellefair', serif;
     font-size: 3rem;
     letter-spacing: .3px;
     line-height: 3rem;
@@ -48,9 +48,9 @@ span.sliderDesc {
         font-size: 1rem;
         margin-bottom: 1rem;
     }
-    
+
     span.sliderTitle {
-        font-size: 2rem;
+        font-size: 3rem;
         line-height: 2rem;
         margin-bottom: 1rem;
     }

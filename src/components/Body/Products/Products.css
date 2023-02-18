@@ -21,7 +21,7 @@
 }
 
 h2 {
-    font-family: 'Domine', serif;
+    font-family: 'Bellefair', serif;
     font-weight: 400;
     font-size: 1.8rem;
     margin-bottom: 0;
@@ -29,8 +29,9 @@ h2 {
 
 .productP {
     height: 45px;
-    color: #BEBEBE; 
+    color: #BEBEBE;
     margin-top: 5px;
+    font-size: 14px;
 }
 
 .productImg img {
@@ -50,7 +51,7 @@ h2 {
 }
 
 @media screen and (max-width: 1080px) {
-    
+
     .gridLayout {
         grid-template-columns: repeat(2, 328px);
         justify-content: space-evenly;
@@ -59,7 +60,7 @@ h2 {
 }
 
 @media screen and (max-width: 730px) {
-    
+
     .gridLayout {
         grid-template-columns: 328px;
     }
@@ -67,37 +68,37 @@ h2 {
 }
 
 @media screen and (max-width: 470px) {
-    
+
     .gridLayout>div {
         font-size: 16px;
     }
-    
+
     .productImg {
         width: 328px;
         height: 219px;
     }
-    
+
     .productDetails {
         margin: 0.8rem;
     }
-    
+
     h2 {
-        font-size: 20px;
+        font-size: 26px;
         margin: 0;
     }
-    
+
     .productP {
         height: 45px;
-        color: #BEBEBE; 
+        color: #BEBEBE;
         margin-top: 5px;
     }
-    
+
     .productImg img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-    
+
     .productDetailsBuy {
         display: flex;
         justify-content: space-between;

@@ -9,7 +9,7 @@
 }
 
 .introductionTitle {
-    font-family: 'Domine', serif;
+    font-family: 'Bellefair', serif;
     text-transform: uppercase;
     text-align: center;
     color: #9a7b69;
@@ -18,7 +18,7 @@
 }
 
 .introductionDesc {
-    font-family: 'Domine', serif;
+    font-family: 'Bellefair', serif;
     text-align: center;
     font-size: 1.8rem;
     margin: 1.2rem 0 3rem 0;
@@ -27,11 +27,11 @@
 
 
 @media screen and (max-width: 470px) {
-    
+
     .introductionTitle {
         font-size: 1.2rem;
     }
-    
+
     .introductionDesc {
         font-size: 1.4rem;
     }
