@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import { SlMagnifier } from "react-icons/sl";
 import { RiMenu3Fill } from "react-icons/ri";
-import { GrClose } from "react-icons/gr";
+import { TfiClose } from "react-icons/tfi";
 
 export default function Navbar() {
     const [toggleMenu, setToggleMenu] = useState(false)
@@ -54,12 +54,12 @@ export default function Navbar() {
                     ? < >
                         <a href=""><h1 className="mobileTitle">Yenvuè</h1></a>
                         <div className="button">
-                            <button onClick={toggleNav} className="btn"><RiMenu3Fill size="1.7rem" color="white" /></button>
+                            <button onClick={toggleNav} className="btn pointer"><RiMenu3Fill size="1.7rem" color="white" /></button>
                         </div>
                     </ >
                     : (screenWidth < 775)
                         ? <div className="button">
-                            <button onClick={toggleNav} className="btn"><GrClose className="icon" size="1.7rem" color="white" /></button>
+                            <button onClick={toggleNav} className="btn pointer"><TfiClose className="icon" size="1.7rem" color="white" /></button>
                         </div>
                         : null
                 }

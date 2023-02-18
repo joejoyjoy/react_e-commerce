@@ -82,10 +82,6 @@ input.search:focus {
     font-size: 18px;
 }
 
-.icon path {
-    stroke: #fff;
-}
-
 
 @media screen and (max-width: 775px) {
 

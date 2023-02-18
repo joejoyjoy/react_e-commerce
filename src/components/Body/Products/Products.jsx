@@ -3,7 +3,7 @@ import './Products.css'
 import ProductList from '../../../assets/db.json'
 import Svg from '../../../assets/Svg/Svg'
 
-function Products() {
+const Products = ({openSidebar}) => {
     return (
         <div className="maxWitdh">
             <div className="bodyContainer">
@@ -19,9 +19,9 @@ function Products() {
                                     <p className="productP">{ProductList.desc}</p>
                                     <div className="productDetailsBuy">
                                         <h2>{ProductList.price}</h2>
-                                        <a href={ProductList.id}>
+                                        <div className="pointer" onClick={openSidebar}>
                                             <Svg />
-                                        </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

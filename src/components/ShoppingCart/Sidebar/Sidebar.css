@@ -1,0 +1,130 @@
+.sidebar {
+    position: fixed;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 520px;
+    transform: translateX(+100%);
+    transition: all 0.4s;
+}
+
+section {
+    position: relative;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.sidebar--open {
+    transform: translateX(0%);
+}
+
+.sidebar-container {
+    margin: 2.5rem;
+}
+
+.sidebar-title {
+    font-family: 'Domine', serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin-bottom: 0.7rem;
+}
+
+.sidebar-text {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1.1px;
+    color: #9a7b69;
+    border-bottom: 1px solid #d8d8d8;
+    padding: 8px 0;
+    margin-bottom: 0;
+}
+
+.sidebar-small-text {
+    font-size: 0.8rem;
+    letter-spacing: 1.2px;
+    color: #5a5a5a;
+}
+
+.sidebar-large-text {
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.sidebar-product {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d8d8d8;
+    padding: 8px 0;
+}
+
+.sidebar-product-details {
+    width: 100%;
+    margin: 1rem;
+}
+
+.sidebar-product-img {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-product-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar-product-title {
+    font-family: 'Domine', serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.sidebar-container-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    z-index: 10;
+}
+
+.sidebar-subtotal {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    padding: 12px 0;
+}
+
+.sidebar-btn {
+    width: 200px;
+    height: 45px;
+    font-size: 12px;
+    font-style: normal;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+    transition: all 0.4s;
+}
+
+.sidebar-btn:hover {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+    transition: all 0.4s;
+}
+
+.margin-top-0 {
+    margin-top: 0;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0;
+}
