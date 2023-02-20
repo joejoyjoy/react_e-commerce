@@ -1,14 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Sidebar.css'
 import { TfiClose } from "react-icons/tfi";
 
 const Sidebar = ({ sidebar, closeSidebar }) => {
+    const [productID, setProductID] = useState('');
+
+    const getData = () => {
+        return localStorage.getItem('id');
+    }
+
+    useEffect(() => {
+        setProductID(getData());
+    }, []);
+
     return (
         <div className={sidebar ? "sidebar sidebar--open" : "sidebar"}>
             <section className="sidebar-container margin-bottom-0">
                 <TfiClose className="icon pointer" size="1.7rem" onClick={closeSidebar} />
                 <h4 className="sidebar-title">My shopping cart</h4>
-                <span className="sidebar-small-text">2 products</span>
+                <span className="sidebar-small-text">{productID} products</span>
                 <h6 className="sidebar-text">Added to cart</h6>
                 <div className="sidebar-product">
                     <div className="sidebar-product-img">
