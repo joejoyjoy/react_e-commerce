@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 import { SlMagnifier } from "react-icons/sl";
 import { RiMenu3Fill } from "react-icons/ri";
@@ -33,11 +34,11 @@ export default function Navbar() {
                 {(toggleMenu || screenWidth > 775) && (
                     < >
                         <div className="navbarContainer">
-                            <a href="" ><h1 className="title">Yenvuè</h1></a>
+                        <Link to={'/'}><h1 className="title">Yenvuè</h1></Link>
                             <ul className="list">
-                                <li className="items">Home</li>
-                                <li className="items">Sofas</li>
-                                <li className="items">Furniture</li>
+                                <li className="items"><Link to={'/'}>Home</Link></li>
+                                <li className="items"><Link to={'/'}>Sofas</Link></li>
+                                <li className="items"><Link to={'/cart'}>Shopping Cart</Link></li>
                             </ul>
                         </div>
                         <div className="inputNavbar">

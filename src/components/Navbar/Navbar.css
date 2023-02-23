@@ -34,12 +34,12 @@ h1 {
 .list {
     display: flex;
     justify-content: center;
-    list-style-type: none;
-    width: fit-content;
-    align-items: center;
     position: relative;
     padding: 0;
     margin: 0;
+    list-style-type: none;
+    width: fit-content;
+    align-items: center;
 }
 
 .items {
@@ -52,6 +52,11 @@ h1 {
     font-size: 17px;
     letter-spacing: .3px;
     line-height: 24px;
+}
+
+.items>a {
+    color: #aeaeae;
+    text-decoration: none;
 }
 
 .inputNavbar {

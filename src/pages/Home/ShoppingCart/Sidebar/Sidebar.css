@@ -79,6 +79,18 @@ section {
     justify-content: space-between;
 }
 
+.sidebar-product-price-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-product-price-buttons>button {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
 .sidebar-product-title {
     font-family: 'Bellefair', serif;
     font-weight: 400;
@@ -102,8 +114,10 @@ section {
 .sidebar-btn {
     width: 200px;
     height: 45px;
+    line-height: 45px !important;
     font-size: 12px;
-    font-style: normal;
+    text-decoration: none;
+    text-align: center;
     letter-spacing: 2px;
     line-height: 1.2;
     color: #fff;
@@ -119,6 +133,31 @@ section {
     transition: all 0.4s;
 }
 
+.sidebar-btn-continue {
+    width: 200px;
+    height: 45px;
+    font-size: 12px;
+    font-style: normal;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    color: #000;
+    background: none;
+    border: 1px solid #b4b4b4;
+    transition: all 0.4s;
+}
+
+.sidebar-btn-continue:hover {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+    transition: all 0.4s;
+}
+
+.sidebar-btn-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
 .margin-top-0 {
     margin-top: 0;
 }
@@ -132,6 +171,23 @@ section {
     .sidebar {
         height: 100vh;
         width: 100vw;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .sidebar-btn-bottom {
+        gap: 10px;
+        width: 100%;
+    }
+
+    .sidebar-btn {
+        width: 100%;
+    }
+
+    .sidebar-btn-continue {
+        width: 100%;
     }
 
 }
