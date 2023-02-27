@@ -1,0 +1,9 @@
+.inputbar {
+    position: relative;
+}
+
+.inputbar>input {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 0;
+}
