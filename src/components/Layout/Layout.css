@@ -1,8 +1,24 @@
 .header {
+    display: flex;
     padding: 25px;
     background: url(https://images.unsplash.com/photo-1676487897165-2e9f9f6e63b7?auto=format&fit=crop);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 30rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-width {
+    display: flex;
+    justify-content: center;
+    width: 480px;
+    margin-top: 10vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-width>h1 {
+    margin: 0;
 }

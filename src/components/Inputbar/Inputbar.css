@@ -1,9 +1,16 @@
 .inputbar {
+    width: 100%;
     position: relative;
+    margin: 0.5rem;
+    padding: 0.5rem;
 }
 
 .inputbar>input {
-    padding: 1rem;
+    width: calc(100% - 1.6rem);
+    padding: 0.8rem;
     border-radius: 0.5rem;
     border: 0;
+    font-size: 1.2rem;
+    color: #444;
+    outline: none;
 }

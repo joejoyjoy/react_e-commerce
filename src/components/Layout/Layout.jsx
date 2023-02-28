@@ -2,11 +2,13 @@ import React from 'react'
 import './Layout.css'
 import Inputbar from '../Inputbar/Inputbar'
 
-function Layout() {
+function Layout({ input, handleKeyDown, setInput }) {
     return (
         <div className='header'>
-            <h1>WISHLIST</h1>
-            <Inputbar />
+            <div className='header-width'>
+                <h1>WISHLIST</h1>
+                <Inputbar input={input} handleKeyDown={handleKeyDown} setInput={setInput} />
+            </div>
         </div>
     )
 }

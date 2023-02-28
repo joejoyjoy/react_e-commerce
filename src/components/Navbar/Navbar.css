@@ -1,0 +1,15 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem;
+    padding-top: 1rem;
+    width: 100%;
+}
+
+.nav-link {
+    color: #666;
+}
+
+.active {
+    color: #fff;
+}
