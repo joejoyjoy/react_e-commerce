@@ -88,4 +88,13 @@ ul li:last-child {
     .task-list-input {
         font-size: 1rem;
     }
+
+    .task-list-input:disabled {
+        font-size: 1rem;
+    }
+    
+    svg {
+        width: 20px;
+        height: 20px;
+    }
 }
