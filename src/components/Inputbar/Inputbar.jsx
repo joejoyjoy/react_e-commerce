@@ -10,7 +10,7 @@ function Inputbar({ input, handleKeyDown, setInput }) {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder='Insert your tasks and press ↩ ENTER...'
+                placeholder='Press ↩ ENTER to add tasks...'
             />
         </div>
     )

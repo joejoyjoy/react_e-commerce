@@ -7,14 +7,14 @@ import Completed from '../Pages/Completed/Completed';
 import ErrorPage from '../Pages/ErrorPage/ErrorPage';
 import Navbar from '../components/Navbar/Navbar';
 
-export const RouterPaths = ({ list, deleteItem, handleSetComplete }) => {
+export const RouterPaths = ({ list, setList, deleteItem, handleSetComplete, editTask, editTaskContent }) => {
     return (
         <>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Home list={list} deleteItem={deleteItem} handleSetComplete={handleSetComplete} />} />
-                    <Route path="/active" element={<Active list={list} deleteItem={deleteItem} handleSetComplete={handleSetComplete} />} />
-                    <Route path="/completed" element={<Completed list={list} deleteItem={deleteItem} handleSetComplete={handleSetComplete} />} />
+                    <Route path="/" element={<Home list={list} setList={setList} deleteItem={deleteItem} handleSetComplete={handleSetComplete} editTask={editTask} editTaskContent={editTaskContent} />}  />
+                    <Route path="/active" element={<Active list={list} setList={setList} deleteItem={deleteItem} handleSetComplete={handleSetComplete} editTask={editTask} editTaskContent={editTaskContent} />} />
+                    <Route path="/completed" element={<Completed list={list} setList={setList} deleteItem={deleteItem} handleSetComplete={handleSetComplete} editTask={editTask} editTaskContent={editTaskContent} />} />
                     <Route path="/*" element={<ErrorPage />} />
                 </Routes>
                 <Navbar />

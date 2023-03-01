@@ -1,6 +1,5 @@
 .header {
     display: flex;
-    padding: 25px;
     background: url(https://images.unsplash.com/photo-1676487897165-2e9f9f6e63b7?auto=format&fit=crop);
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,7 +12,8 @@
 .header-width {
     display: flex;
     justify-content: center;
-    width: 480px;
+    max-width: 480px;
+    margin: 1rem;
     margin-top: 10vh;
     flex-direction: column;
     align-items: center;
@@ -21,4 +21,17 @@
 
 .header-width>h1 {
     margin: 0;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 515px) {
+    .header-container {
+        font-size: 0.8rem;
+    }
 }

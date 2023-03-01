@@ -6,8 +6,10 @@ function Layout({ input, handleKeyDown, setInput }) {
     return (
         <div className='header'>
             <div className='header-width'>
-                <h1>WISHLIST</h1>
-                <Inputbar input={input} handleKeyDown={handleKeyDown} setInput={setInput} />
+                <div className='header-container'>
+                    <h1>WISHLIST</h1>
+                    <Inputbar input={input} handleKeyDown={handleKeyDown} setInput={setInput} />
+                </div>
             </div>
         </div>
     )

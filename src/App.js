@@ -37,6 +37,31 @@ function App() {
         setList(newList);
     }
 
+    const editTask = (id) => {
+
+        const updatedList = list.map(list => {
+            
+            if (list.id === id) {
+                return { ...list, isEditing: !list.isEditing }
+            }
+            return list;
+        })
+
+        setList(updatedList);
+    }
+
+    const editTaskContent = (e, id) => {
+
+        const editList = list.map(list => {
+            if (list.id === id) {
+                return { ...list, text: e.target.value }
+            }
+            return list;
+        })
+
+        setList(editList);
+    }
+
     const handleKeyDown = (e) => {
         if (e.key === 'Enter') {
             addItem(input);
@@ -58,7 +83,7 @@ function App() {
     return (
         <>
             <Layout input={input} handleKeyDown={handleKeyDown} setInput={setInput} />
-            <List list={list} deleteItem={deleteItem} handleSetComplete={handleSetComplete} />
+            <List list={list} setList={setList} deleteItem={deleteItem} handleSetComplete={handleSetComplete} editTask={editTask} editTaskContent={editTaskContent} />
         </>
     );
 }

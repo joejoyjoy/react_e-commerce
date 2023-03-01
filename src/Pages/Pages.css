@@ -4,11 +4,15 @@ ul {
     width: 100%;
 }
 
-ul>li {
+ul li {
     list-style-type: none;
     padding: 0.6rem;
     margin: 0;
     border-bottom: 1px solid #ffffff20;
+}
+
+ul li:last-child {
+    border-bottom: 0;
 }
 
 .unordered-list>a {
@@ -26,8 +30,6 @@ ul>li {
     display: flex;
     align-items: center;
     gap: 10px;
-    text-decoration: line-through;
-    color: #666;
 }
 
 .pages-list-checked_completed {
@@ -39,6 +41,21 @@ ul>li {
     color: #fff;
 }
 
+.task-list-input {
+    background: #00000070;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.task-list-input:disabled {
+    background: none;
+    font-size: 1.5rem;
+    color: #fff;
+    border: 0;
+}
+
 .pages-list-uncheck {
     font-size: 1.5rem;
     display: flex;
@@ -46,11 +63,29 @@ ul>li {
     gap: 10px;
 }
 
-.pages-list-close {
+.pages-list-btn {
     background: none;
     border: 0;
 }
 
-.pages-list-close path {
+.pages-list-btn path {
     stroke: #fff;
+}
+
+@media only screen and (max-width: 515px) {
+    .pages-list-checked {
+        font-size: 1rem;
+    }
+    
+    .pages-list-checked_completed {
+        font-size: 1rem;
+    }
+    
+    .pages-list-uncheck {
+        font-size: 1rem;
+    }
+
+    .task-list-input {
+        font-size: 1rem;
+    }
 }

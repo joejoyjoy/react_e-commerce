@@ -3,7 +3,7 @@ import './List.css'
 import { RouterPaths } from "../../Routes/Router";
 import notFound from '../../assets/nothing-found.png';
 
-function List({ list, deleteItem, handleSetComplete }) {
+function List({ list, setList, deleteItem, handleSetComplete, editTask, editTaskContent }) {
 
     return (
         <>
@@ -12,7 +12,7 @@ function List({ list, deleteItem, handleSetComplete }) {
 
                     {
                         list.length > 0 ? (
-                            <RouterPaths list={list} deleteItem={deleteItem} handleSetComplete={handleSetComplete} />
+                            <RouterPaths list={list} setList={setList} deleteItem={deleteItem} handleSetComplete={handleSetComplete} editTask={editTask} editTaskContent={editTaskContent} />
                         ) : (
                             <><h2>List empty. Please add</h2>
                                 <img src={notFound} alt="svg of woman searching" className='list-img' />
