@@ -16,7 +16,6 @@ In this project you will will be able to interact and usa a React.js Wish/Todo l
 - [The Project](#the-project)
 - [Installation Process](#installation-process)
 - [Project delivery](#project-delivery)
-- [Resources](#resources)
 
 ## Getting Started
 
