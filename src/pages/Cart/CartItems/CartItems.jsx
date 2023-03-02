@@ -1,26 +1,17 @@
 import React, { useContext } from 'react'
-import { SiteContext } from '../../../../contexts/SiteContext';
-import './Sidebar.css'
-import { Link } from 'react-router-dom';
-import { TfiClose } from "react-icons/tfi";
+import { SiteContext } from '../../../contexts/SiteContext'
+import './CartItems.css'
 
-const Sidebar = () => {
+function CartItems() {
 
-    const { sidebar, cart, toggleSidebar, removeFromCart, incrementItem, totalPrice, totalProduct } = useContext(SiteContext);
+    const { cart, removeFromCart, incrementItem, totalPrice } = useContext(SiteContext);
 
     return (
-        <div className={sidebar ? "sidebar sidebar--open" : "sidebar"}>
-            <section className="sidebar-container margin-bottom-0">
-                <TfiClose className="icon pointer" size="1.7rem" onClick={toggleSidebar} />
-                <h4 className="sidebar-title">My shopping cart</h4>
-
-                {totalProduct > 1
-                    ? <span className="sidebar-small-text">{totalProduct} products</span>
-                    : <span className="sidebar-small-text">{totalProduct} product</span>
-                }
-
-                <h6 className="sidebar-text">Added to cart</h6>
-
+        <>
+            <div className="cart-items">
+                <span className="cart-items-title">Your items</span>
+            </div>
+            <div className="cart-items">
                 {cart.map((sofa) => {
                     return (
                         <div key={sofa.id} className="sidebar-product">
@@ -42,9 +33,6 @@ const Sidebar = () => {
                         </div>
                     )
                 })}
-
-            </section>
-            <div className="sidebar-container margin-top-0">
                 <div className="sidebar-container-flex">
                     <div className="sidebar-subtotal">
                         <span className="sidebar-large-text">Order Subtotal</span>
@@ -52,13 +40,12 @@ const Sidebar = () => {
                     </div>
                     <span className="sidebar-small-text">Delivery time 10-14 working days.</span>
                     <div className="sidebar-btn-bottom">
-                        <button className="sidebar-btn-continue pointer" onClick={toggleSidebar}>CONTINUE SHOPPING</button>
-                        <Link className="sidebar-btn pointer" to={'/cart'}>VIEW CART</Link>
+                        <button className="cart-items-btn pointer">CONTINUE TO CHECKOUT</button>
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 
-export default Sidebar
+export default CartItems

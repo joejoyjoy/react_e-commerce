@@ -2,6 +2,7 @@ import React from 'react'
 import './Slider.css'
 
 function Slider() {
+
     return (
         <div className="slider" style={{
             backgroundImage: `url("https://images.pexels.com/photos/13581811/pexels-photo-13581811.jpeg?auto=compress&cs=tinysrgb&w=2048&h=1220&dpr=1")`,

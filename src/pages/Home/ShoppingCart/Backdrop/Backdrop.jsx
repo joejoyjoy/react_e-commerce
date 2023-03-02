@@ -1,10 +1,11 @@
 import React from 'react'
 import './Backdrop.css'
 
-const backdrop = ({sidebar, closeSidebar}) => {
-  return (
-    <div className={sidebar ? "backdrop backdrop--open" : "backdrop"} onClick={closeSidebar} ></div>
-  )
+const backdrop = ({sidebar, toggleSidebar}) => {
+
+    return (
+        <div className={sidebar ? "backdrop backdrop--open" : "backdrop"} onClick={toggleSidebar} ></div>
+    )
 }
 
 export default backdrop
