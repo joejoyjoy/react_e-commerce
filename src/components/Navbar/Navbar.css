@@ -88,6 +88,15 @@ input.search:focus {
     border-radius: 0.5rem;
 }
 
+a.mobileTitle {
+    text-decoration: none;
+    margin: 9.5px 0;
+}
+
+a.title {
+    text-decoration: none;
+}
+
 .btn {
     padding: 5px;
     background-color: transparent;
