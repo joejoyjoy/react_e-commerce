@@ -4,6 +4,7 @@ import './Navbar.css';
 import { SlMagnifier } from "react-icons/sl";
 import { RiMenu3Fill } from "react-icons/ri";
 import { TfiClose } from "react-icons/tfi";
+import { RxPerson } from "react-icons/rx";
 
 export default function Navbar() {
     const [toggleMenu, setToggleMenu] = useState(false)
@@ -44,6 +45,7 @@ export default function Navbar() {
                         <div className="inputNavbar">
                             <SlMagnifier size="1.7rem" color="white" />
                             <input className="search" placeholder="I'm looking for..." />
+                            <RxPerson />
                         </div>
                     </ >
 

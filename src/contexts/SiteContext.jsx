@@ -4,18 +4,34 @@ export const SiteContext = createContext()
 const cartFromLocalStorage = JSON.parse(localStorage.getItem("cart") || "[]")
 
 function SiteContextProvider(props) {
-
+    // Side bar shopping card open/close
     const [sidebar, setSidebar] = useState(false);
 
     const toggleSidebar = () => {
         setSidebar((prevState) => !prevState)
     }
 
-    const [cart, setCart] = useState(cartFromLocalStorage)
+
+    // Products fetch
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        loadData()
+    }, [])
+
+    const loadData = async () => {
+        // const pagination = 0;
+        const api = `http://localhost:3500/sofas`; //?_page=${pagination}&_limit=12
+        await fetch(api)
+            .then(response => response.json())
+            .then(receivedData => setData(receivedData));
+    }
 
 
 
     // Add to cart
+    const [cart, setCart] = useState(cartFromLocalStorage)
+
     const addToCart = (sofa) => {
         // check if sofa already in cart
         const sofaInCart = cart.find(sofaInCart => sofaInCart.id === sofa.id)
@@ -64,7 +80,7 @@ function SiteContextProvider(props) {
         setTotalProduct(() => document.querySelectorAll('section .sidebar-product').length );
     }, [cart])
 
-    const value = { sidebar, cart, toggleSidebar, addToCart, removeFromCart, incrementItem, totalPrice, totalProduct }
+    const value = { sidebar, cart, toggleSidebar, addToCart, removeFromCart, incrementItem, totalPrice, totalProduct, data }
 
     return (
         <SiteContext.Provider value={value}>

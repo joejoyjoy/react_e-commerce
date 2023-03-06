@@ -2,7 +2,7 @@ import './Svg.css';
 
 function Svg() {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" className="addToCardSvg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" className="addToCartSvg">
             <path
                 d="M21.01 11.22v4.49c0 4.49-1.79 6.29-6.29 6.29H9.33c-.58 0-1.11-.03-1.6-.1M3.04 15.52v-4.3M12.03 12c1.83 0 3.18-1.49 3-3.32L14.36 2H9.69l-.67 6.68C8.84 10.51 10.2 12 12.03 12Z"
                 stroke="#AEAEAE" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
