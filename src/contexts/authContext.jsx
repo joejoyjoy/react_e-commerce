@@ -24,6 +24,7 @@ export function AuthContextProvider({ children }) {
     const logout = useCallback(function () {
         localStorage.removeItem('auth');
         localStorage.removeItem('user');
+        localStorage.removeItem('cart');
         setIsAuthenticated(false);
     }, []);
 

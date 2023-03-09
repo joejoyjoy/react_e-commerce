@@ -50,7 +50,7 @@ export default function Navbar() {
                             <input className="search" placeholder="I'm looking for..." />
                             <Link to={isAuthenticated ? '/profile' : "/login"} className='login-logout'>
                                 <RxPerson size="1.7rem" color="white" />
-                                <span className='navbar-text'>{isAuthenticated ? (avatar) : "Login"}</span>
+                                <span className='navbar-text'>{isAuthenticated ? (avatar) : "Sign Up"}</span>
                             </Link>
                         </div>
                     </ >

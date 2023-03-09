@@ -1,0 +1,13 @@
+.container-404 {
+    position: relative;
+    top: 5.2rem;
+    height: calc(100vh - 5.2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-404 {
+    margin-bottom: 0;
+}

@@ -22,8 +22,8 @@
 }
 
 .profile-background {
-    max-width: 480px;
-    max-height: 480px;
+    max-width: 640px;
+    max-height: 560px;
     overflow: auto;
     margin: auto;
     position: absolute;
@@ -36,17 +36,41 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0.5rem;
+    padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
-.profile-background>h2 {
-    margin: 0;
-    margin-bottom: 2.6rem;
+.profile-background>h3 {
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0.2rem;
 }
 
-.profile-background>form {
+.profile-background>p {
+    margin: 0.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.profile-flex {
+    display: flex;
+    gap: 1rem;
+}
+
+.profile-flex1 {
+    width: 100%;
+}
+
+.profile-flex2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.profile-flex1>form {
     display: flex;
     flex-direction: column;
 }
@@ -82,4 +106,70 @@
     line-height: 1.2;
     color: #fff;
     background-color: #000;
+}
+
+.profile-btn-div {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-btn-continue {
+    width: 241px;
+    height: 45px;
+    margin: 1.2rem 0;
+    line-height: 45px !important;
+    font-size: 12px;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #b4b4b4;
+}
+
+.profile-btn-continue-div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+@media screen and (max-width: 980px) {
+
+    .profile-background {
+        top: auto;
+        bottom: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+
+    .profile-background {
+        bottom: 0;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .profile-background {
+        max-height: fit-content;
+        top: 40rem;
+    }
+
+    .profile-background>p {
+        margin-bottom: 3rem;
+    }
+
+    .profile-flex {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .profile-flex2 {
+        align-items: flex-start;
+        text-align: left;
+    }
+
 }

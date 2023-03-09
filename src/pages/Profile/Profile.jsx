@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { useAuthContext } from '../../contexts/authContext'
 
 function Profile() {
-    const { logout, user, setUser, email, setEmail, pswd, setPswd, setAvatar } = useAuthContext();
+    const { logout, user, setUser, email, setEmail, pswd, setPswd, avatar, setAvatar } = useAuthContext();
 
     function handleChange(e) {
         e.preventDefault()
@@ -35,46 +35,58 @@ function Profile() {
             </div>
             <section className="profile-background">
 
-                <h3>Profile</h3>
-                <p>Change your information</p>
-
-                <form onSubmit={handleChange}>
-                    <label htmlFor="user" className="login-lable">First name</label>
-                    <input
-                        type="text"
-                        name="user"
-                        id="user"
-                        placeholder="Enter name"
-                        className="login-input"
-                        onChange={(e) => setUser(e.target.value)}
-                        value={user}
-                        required
-                    />
-                    <label htmlFor="email" className="login-lable">Email address &#40;Not editable&#41;</label>
-                    <input
-                        type="text"
-                        name="email"
-                        id="email"
-                        placeholder="Email"
-                        className="login-input"
-                        readOnly
-                        value={email}
-                        required
-                    />
-                    <label htmlFor="pswd" className="login-lable">Password</label>
-                    <input
-                        type="text"
-                        name="password"
-                        id="pswd"
-                        placeholder="Password"
-                        className="login-input"
-                        onChange={(e) => setPswd(e.target.value)}
-                        value={pswd}
-                        required
-                    />
-                    <button type="submit" className="login-btn pointer">APPLY CHANGES</button>
-                </form>
-                <Link to={'/profile/logout'} onClick={handleLogout} className="profile-btn pointer">LOGOUT</Link>
+                <h3>User Settings</h3>
+                <p>Welcome back, {avatar}!</p>
+                <div className="profile-flex">
+                    <div className="profile-flex1">
+                        <h3>Change your information</h3>
+                        <form onSubmit={handleChange}>
+                            <label htmlFor="user" className="login-lable">First name</label>
+                            <input
+                                type="text"
+                                name="user"
+                                id="user"
+                                placeholder="Enter name"
+                                className="login-input"
+                                onChange={(e) => setUser(e.target.value)}
+                                value={user}
+                                required
+                            />
+                            <label htmlFor="email" className="login-lable">Email address &#40;Not editable&#41;</label>
+                            <input
+                                type="text"
+                                name="email"
+                                id="email"
+                                placeholder="Email"
+                                className="login-input"
+                                readOnly
+                                value={email}
+                                required
+                            />
+                            <label htmlFor="pswd" className="login-lable">Password</label>
+                            <input
+                                type="text"
+                                name="password"
+                                id="pswd"
+                                placeholder="Password"
+                                className="login-input"
+                                onChange={(e) => setPswd(e.target.value)}
+                                value={pswd}
+                                required
+                            />
+                            <div className="profile-btn-div">
+                                <button type="submit" className="profile-btn pointer">APPLY CHANGES</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div className="profile-flex2">
+                        <h3>Logout</h3>
+                        <p>Want to logout?<br />Please keep in mind your cart will be removed</p>
+                        <div className="profile-btn-continue-div">
+                            <Link to={'/profile/logout'} onClick={handleLogout} className="profile-btn-continue pointer">LOGOUT</Link>
+                        </div>
+                    </div>
+                </div>
 
             </section >
         </>

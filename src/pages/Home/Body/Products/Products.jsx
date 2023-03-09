@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { SiteContext } from '../../../../contexts/SiteContext'
+import { useAuthContext } from '../../../../contexts/authContext'
 import './Products.css'
 import Svg from '../../../../assets/Svg/Svg'
 import Sidebar from '../../ShoppingCart/Sidebar/Sidebar'
@@ -8,6 +9,7 @@ import Backdrop from '../../ShoppingCart/Backdrop/Backdrop'
 const Products = () => {
 
     const { sidebar, toggleSidebar, addToCart, data } = useContext(SiteContext);
+    const { isAuthenticated } = useAuthContext();
 
     return (
         <>
@@ -26,7 +28,7 @@ const Products = () => {
                                         <p className="productP">{sofa.desc}</p>
                                         <div className="productDetailsBuy">
                                             <h2>{sofa.price}€</h2>
-                                            <div onClick={() => addToCart(sofa)}>
+                                            <div onClick={isAuthenticated ? () => addToCart(sofa) : null}>
                                                 <div className="pointer" onClick={toggleSidebar}>
                                                     <Svg />
                                                 </div>

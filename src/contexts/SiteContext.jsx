@@ -1,9 +1,21 @@
 import React, { useState, useEffect, createContext } from "react";
+import { useAuthContext } from "./authContext";
 
 export const SiteContext = createContext()
 const cartFromLocalStorage = JSON.parse(localStorage.getItem("cart") || "[]")
 
 function SiteContextProvider(props) {
+    // Check if user is logged In
+    const { isAuthenticated } = useAuthContext();
+
+    useEffect(() => {
+        if (!isAuthenticated) {
+            setCart([]);
+        }
+    }, [isAuthenticated])
+
+
+
     // Side bar shopping card open/close
     const [sidebar, setSidebar] = useState(false);
 
