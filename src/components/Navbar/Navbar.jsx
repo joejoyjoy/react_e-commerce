@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import { useAuthContext } from '../../contexts/authContext';
 import { SlMagnifier } from "react-icons/sl";
 import { RiMenu3Fill } from "react-icons/ri";
 import { TfiClose } from "react-icons/tfi";
 import { RxPerson } from "react-icons/rx";
 
 export default function Navbar() {
+    const { isAuthenticated, avatar } = useAuthContext();
+
     const [toggleMenu, setToggleMenu] = useState(false)
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
@@ -35,7 +38,7 @@ export default function Navbar() {
                 {(toggleMenu || screenWidth > 775) && (
                     < >
                         <div className="navbarContainer">
-                        <Link to={'/'} className="title"><h1>Yenvuè</h1></Link>
+                            <Link to={'/'} className="title"><h1>Yenvuè</h1></Link>
                             <ul className="list">
                                 <li className="items"><Link to={'/'}>Home</Link></li>
                                 <li className="items"><Link to={'/'}>Sofas</Link></li>
@@ -45,7 +48,10 @@ export default function Navbar() {
                         <div className="inputNavbar">
                             <SlMagnifier size="1.7rem" color="white" />
                             <input className="search" placeholder="I'm looking for..." />
-                            <Link to={'/login'}><RxPerson size="1.7rem" color="white" /></Link>
+                            <Link to={isAuthenticated ? '/profile' : "/login"} className='login-logout'>
+                                <RxPerson size="1.7rem" color="white" />
+                                <span className='navbar-text'>{isAuthenticated ? (avatar) : "Login"}</span>
+                            </Link>
                         </div>
                     </ >
 
