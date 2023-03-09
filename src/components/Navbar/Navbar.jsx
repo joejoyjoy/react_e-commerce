@@ -45,7 +45,7 @@ export default function Navbar() {
                         <div className="inputNavbar">
                             <SlMagnifier size="1.7rem" color="white" />
                             <input className="search" placeholder="I'm looking for..." />
-                            <RxPerson />
+                            <Link to={'/login'}><RxPerson size="1.7rem" color="white" /></Link>
                         </div>
                     </ >
 

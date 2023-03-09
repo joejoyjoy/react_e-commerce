@@ -97,6 +97,18 @@ a.title {
     text-decoration: none;
 }
 
+.navbar-text {
+    color: #aeaeae;
+    padding-left: 8px;
+}
+
+.login-logout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
 .btn {
     padding: 5px;
     background-color: transparent;
@@ -124,7 +136,7 @@ a.title {
         grid-area: b;
         align-self: start;
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
     }
 
     .navbarContainer {

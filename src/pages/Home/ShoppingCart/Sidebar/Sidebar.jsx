@@ -16,7 +16,7 @@ const Sidebar = () => {
 
                 {totalProduct > 1
                     ? <span className="sidebar-small-text">{totalProduct} products</span>
-                    : <span className="sidebar-small-text">{totalProduct} product</span>
+                    : <span className="sidebar-small-text">1 product</span>
                 }
 
                 <h6 className="sidebar-text">Added to cart</h6>
