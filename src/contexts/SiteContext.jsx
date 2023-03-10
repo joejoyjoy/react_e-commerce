@@ -16,6 +16,11 @@ function SiteContextProvider(props) {
 
 
 
+    // Get search focus value
+    const [searchFocus, setSearchFocus] = useState(false);
+
+    
+
     // Side bar shopping card open/close
     const [sidebar, setSidebar] = useState(false);
 
@@ -92,7 +97,7 @@ function SiteContextProvider(props) {
         setTotalProduct(() => document.querySelectorAll('section .sidebar-product').length );
     }, [cart])
 
-    const value = { sidebar, cart, toggleSidebar, addToCart, removeFromCart, incrementItem, totalPrice, totalProduct, data }
+    const value = { sidebar, cart, toggleSidebar, addToCart, removeFromCart, incrementItem, totalPrice, totalProduct, data, searchFocus, setSearchFocus }
 
     return (
         <SiteContext.Provider value={value}>

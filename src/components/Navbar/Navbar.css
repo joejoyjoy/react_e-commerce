@@ -5,7 +5,11 @@ nav {
     background: #1a1919;
     display: flex;
     justify-content: center;
-    z-index: 5;
+    z-index: 1;
+}
+
+.z-index {
+    z-index: 2;
 }
 
 .navbar {
@@ -19,6 +23,28 @@ nav {
 .navbarContainer {
     display: flex;
     gap: 2rem;
+}
+
+.navbarSearchResult {
+    position: absolute;
+    top: 5.2rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+
+.navbarSearchResultContainer {
+    width: 495px;
+    font-size: 2rem;
+    padding: 0 1.2rem;
+    color: #aeaeae;
+    background-color: #1a1919;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    max-height: 80vh;
+    overflow: auto;
 }
 
 h1 {
@@ -65,7 +91,7 @@ h1 {
     align-items: center;
 }
 
-input.search {
+.search-click {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     font-size: 14px;
@@ -78,14 +104,34 @@ input.search {
     margin: 0 1rem;
     border: .2em solid transparent;
     border-left: .2em solid #393939;
+    outline: none;
+    background-size: 22px;
+    background-position: 13px;
+    transition: all 0.5s;
 }
 
-input.search::placeholder {
+.search-click::placeholder {
     color: #aeaeae;
 }
 
-input.search:focus {
-    border-radius: 0.5rem;
+.search-click:focus {
+    width: 400px;
+}
+
+.search-click {
+    position: relative;
+    overflow: hidden;
+}
+
+.search-click input {
+    background: transparent;
+    border: .2em solid transparent;
+    border-left: .2em solid #393939;
+    outline: none;
+    position: absolute;
+    width: 300px;
+    left: 0%;
+    padding: 10px;
 }
 
 a.mobileTitle {
@@ -94,6 +140,12 @@ a.mobileTitle {
 }
 
 a.title {
+    text-decoration: none;
+}
+
+.navbarSearchResultAnchor {
+    color: #aeaeae;
+    cursor: pointer;
     text-decoration: none;
 }
 
@@ -115,6 +167,43 @@ a.title {
     border: 0;
     font-size: 18px;
 }
+
+.navbar-search-product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.navbar-search-product:hover {
+    background-color: #393939;
+}
+
+.navbar-search-product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 1rem;
+}
+
+.navbar-search-product-img {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-search-product-title {
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.navbar-search-small-text {
+    font-size: 0.8rem;
+    letter-spacing: 1.2px;
+    color: #777777;
+}
+
+
 
 
 @media screen and (max-width: 775px) {
@@ -160,7 +249,7 @@ a.title {
 
     .items {
         display: inline-block;
-        width: 6rem;
+        width: 8rem;
         border-top: 1px solid rgba(255, 255, 255, 0.555);
         text-align: center;
         margin: 0 auto;
