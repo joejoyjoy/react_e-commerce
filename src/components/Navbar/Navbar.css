@@ -203,7 +203,13 @@ a.title {
     color: #777777;
 }
 
+@media screen and (max-width: 1060px) {
 
+    .navbarSearchResult {
+        width: 96%;
+    }
+
+}
 
 
 @media screen and (max-width: 775px) {
@@ -258,6 +264,10 @@ a.title {
 
     .items:first-child {
         border-top: 0;
+    }
+
+    .search-click:focus {
+        width: 105px;
     }
 
     .btn {

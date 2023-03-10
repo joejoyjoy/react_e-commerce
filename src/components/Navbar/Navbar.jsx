@@ -14,7 +14,7 @@ export default function Navbar() {
     const { searchFocus, setSearchFocus } = useContext(SiteContext);
 
     const [searchValue, setSearchValue] = useState('');
-    const [products, isLoading, error] = useSearch(searchValue);
+    const [products] = useSearch(searchValue);
     const [toggleMenu, setToggleMenu] = useState(false)
     const [screenWidth, setScreenWidth] = useState(window.innerWidth)
 
@@ -76,8 +76,8 @@ export default function Navbar() {
                                 <span className="navbarSearchResultContainer">
                                     {products.map((sofa) => {
                                         return (
-                                            <a className="navbarSearchResultAnchor" href={"/#" + sofa.id}>
-                                                <div key={sofa.id} className="navbar-search-product">
+                                            <a key={sofa.id} className="navbarSearchResultAnchor" href={"/#" + sofa.id}>
+                                                <div className="navbar-search-product">
                                                     <div className="navbar-search-product-img">
                                                         <img src={sofa.url} width="80px" height="80px" alt={sofa.name + " " + sofa.desc} />
                                                     </div>
@@ -92,7 +92,7 @@ export default function Navbar() {
                                 </span>
                             </div>
                             :
-                            <span></span>
+                            null
                         }
                     </ >
 
