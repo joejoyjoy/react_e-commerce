@@ -46,6 +46,10 @@ h2 {
     object-fit: cover;
 }
 
+.productButton{
+    z-index: 5;
+}
+
 .productDetailsBuy {
     display: flex;
     justify-content: space-between;

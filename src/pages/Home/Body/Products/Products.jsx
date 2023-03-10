@@ -29,7 +29,7 @@ const Products = () => {
                                             <p className="productP">{sofa.desc}</p>
                                             <div className="productDetailsBuy">
                                                 <h2>{sofa.price}€</h2>
-                                                <div onClick={isAuthenticated ? () => addToCart(sofa) : null}>
+                                                <div className="productButton" onClick={isAuthenticated ? () => addToCart(sofa) : null}>
                                                     <div className="pointer" onClick={toggleSidebar}>
                                                         <Svg />
                                                     </div>

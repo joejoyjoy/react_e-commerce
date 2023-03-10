@@ -68,3 +68,15 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #6b5449;
 }
+
+@media screen and (max-width: 550px) {
+
+    .error-message-container>h2 {
+        font-size: 2.2rem;
+    }
+
+    .error-message-container>span {
+        font-size: 1rem;
+    }
+
+}

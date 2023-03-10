@@ -24,7 +24,7 @@ function CartBanner() {
                             <h2>My shopping cart</h2>
                             <span>Please <Link to={'/login'} className="error-message-container_a">sign up</Link> first to use the shopping cart.</span>
                         </div>
-                        <img src={ImgCart} alt="Add to cart svg victor" />
+                        <img src={ImgCart} alt="Add to cart svg victor" width="100%" />
                     </>
                 }
 
