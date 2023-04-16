@@ -12,9 +12,17 @@ This is a demo app that help me learn the basics of React and to create a e-comm
 
 ## Table of Contents <!-- omit in toc -->
 
-- [Getting Started](#getting-started)
 - [The repo](#the-repo)
+- [Getting Started](#getting-started)
 - [The Project](#the-project)
+
+### The repo
+
+First, you will need to clone the repo:
+
+```bash
+$ git clone https://github.com/joejoyjoy/react_e-commerce.git
+```
 
 ## Getting Started
 
@@ -28,18 +36,9 @@ Then, run `npm run api` to start the local json server.
 
 The server will be run by default in the following url: `http://localhost:3500/sofas`
 
-### The repo
-
-First, you will need to clone the repo:
-
-```bash
-$ git clone https://github.com/joejoyjoy/react_e-commerce.git
-```
-
-
 ## The Project
 
-In this e-commerce project you will have a full responsive experience with a [home page](./src/pages/Home/Home.jsx), [sign up](./src/pages/Login/Login.jsx), [shoppign cart](./src/pages/Cart/Cart.jsx), and a [sidebar cart](./src/pages/Home/ShoppingCart/Sidebar/Sidebar.jsx) when a product is added. There is also present a searchbar.
+In this e-commerce project you will have a full responsive experience with a [home page](./src/pages/Home/Home.jsx), [sign up](./src/pages/Login/Login.jsx), [shopping cart](./src/pages/Cart/Cart.jsx), and a [sidebar cart](./src/pages/Home/ShoppingCart/Sidebar/Sidebar.jsx) when a product is added. There is also present a searchbar.
 
 <img src="./src/assets/Img/preview1.png" alt="Web preview app desktop version" width="100%">
 <img src="./src/assets/Img/preview2.png" alt="Web preview app desktop and mobile version" width="100%">
